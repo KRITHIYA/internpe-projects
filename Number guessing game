@@ -1,0 +1,60 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout<<"Welcome to number guessing game!\n";
+    cout<<"Choose difficulty level...here's how\n";
+    cout<<"Enter 1 for Easy\n";
+    cout<<"Enter 2 for Medium\n";
+    cout<<"Enter 3 for Hard\n";
+    int difficultylevel;
+    cin>>difficultylevel;
+    if(difficultylevel==1){
+        //easy code
+        for(int i=1;i<5;i++){
+            int guessnum;
+            cout<<"Guess a number between 1 to 10\n\n";
+            cin>>guessnum;
+            int randomnumber=(rand()%(10-1)+1);
+            if(guessnum==randomnumber){
+                cout<<"You won";
+            }
+            else{
+                cout<<"Try again";
+            }
+        }
+    }
+    else if(difficultylevel==2){
+        //medium code
+         for(int i=1;i<=3;i++){
+            int guessnum;
+            cout<<"Guess a number between 1 to 10\n\n";
+            cin>>guessnum;
+            int randomnumber=(rand()%(10-1)+1);
+            if(guessnum==randomnumber){
+                cout<<"You won";
+            }
+            else{
+                cout<<"Try again";
+            }
+        }
+    }
+    else{
+        // hard code
+         for(int i=1;i<=1;i++){
+            int guessnum;
+            cout<<"Guess a number between 1 to 10\n\n";
+            cin>>guessnum;
+            int randomnumber=(rand()%(10-1)+1);
+            if(guessnum==randomnumber){
+                cout<<"You won";
+            }
+            else{
+                cout<<"Try again";
+            }
+        }
+    }
+    return 0;
+}
